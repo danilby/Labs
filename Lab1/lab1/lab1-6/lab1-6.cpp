@@ -12,10 +12,11 @@ int main()
     int SecInYear = days*hours*minutes*sec;//Всего секунд в году
     long long hYear = 100;
     long long thYear = 1000;//кол-во лет
-    long long sec1 = hYear * (days + (hYear / 4)) * hours * minutes * sec; //Секунд в 100 лет
-    long long sec2 = thYear * (days + (thYear / 4)) * hours * minutes * sec;//Секунд в 1000 лет
+    int sec1 = hYear * (days + (hYear / 4)) * hours * minutes * sec;
+    int sec2 = thYear * (days + (thYear / 4)) * hours * minutes * sec;
+    long long lsec1 = hYear * (days + (hYear / 4)) * hours * minutes * sec; //Секунд в 100 лет
+    long long lsec2 = thYear * (days + (thYear / 4)) * hours * minutes * sec;//Секунд в 1000 лет
     
     
     
-
 }
