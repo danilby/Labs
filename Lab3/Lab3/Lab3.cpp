@@ -27,7 +27,7 @@ int main()
     double axr = ax * (pi / 180);
     t1 = (1 / c) * log(pow(ax + b, b / a) * pow(x * y + d, d / y));
     t2 = pow(a*(n-1),-1) * sin(axr) / pow(cos(axr), n - 1);
-    //t2 = 1 / (a * (n - 1)) * sin(ax) / pow(cos(ax), n - 1);
+    //t2 = 1 / (a * (n - 1)) * sin(axr) / pow(cos(axr), n - 1);
 
     printf("t1 = %.2lf\n", t1);
     printf("t2 = %lf", t2);
