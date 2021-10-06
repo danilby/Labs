@@ -14,16 +14,18 @@ int main()
     // (ax > -b) && (yx > -d)
     double t1, t2;
     printf("Если заданные числа в программе (+) введите x > %lf\n", -b / a);
-    printf("Если заданные числа в программе (-) введите x < %lf\n", -b / a);
+   // printf("Если заданные числа в программе (-) введите x < %lf\n", -b / a);
     printf("Введите x >>");
     scanf("%lf", &x);
     printf("Если заданные числа в программе (+) введите y > %lf\n", -d / x);
-    printf("Если заданные числа в программе (-) введите y < %lf\n", -d / x);
+   // printf("Если заданные числа в программе (-) введите y < %lf\n", -d / x);
     printf("Введите y >>");
     scanf("%lf", &y);
+    printf("\n\n");
     double ax = a * x;
     t1 = (1 / c) * log(pow(ax + b, b / a) * pow(x * y + d, d / y));
     t2 = pow(a*(n-1),-1) * sin(ax) / pow(cos(ax), n - 1);
+    //t2 = 1 / (a * (n - 1)) * sin(ax) / pow(cos(ax), n - 1);
 
     printf("t1 = %.2lf\n", t1);
     printf("t2 = %lf", t2);
