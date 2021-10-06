@@ -2,7 +2,6 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "windows.h";
-using namespace std;
 
 int main()
 {
@@ -22,9 +21,7 @@ int main()
 	scanf("%s %c %lld %f", name3, &amn3, &vol3, &per3);
 
 
-	printf("\n");
-	printf("\n");
-	printf("\n");
+	printf("\n\n\n");
 
 
 	// Вывод таблицы 
@@ -46,9 +43,8 @@ int main()
 
 
 
-	printf("\n");
-	printf("\n");
-	printf("\n");
+	printf("\n\n\n\n");
+	
 	return 0;
 }
 
