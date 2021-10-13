@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <conio.h>
 #include "windows.h"
 int main()
 {
@@ -16,6 +15,6 @@ int main()
             printf("\nТочка попадает в область\n");
         else
             printf("\nТочка не попадает в область\n");
-        _getch();
+      
     }
 }
