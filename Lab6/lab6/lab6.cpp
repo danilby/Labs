@@ -18,7 +18,7 @@ int main()
         dbln = n;
         num = k * (dbln + 1) / (dbln * dbln * dbln + 2);
         if (fabs(num) >= eps) {
-            sum += num;          
+             sum += num;          
         }
         else break;
         if (n == 9)

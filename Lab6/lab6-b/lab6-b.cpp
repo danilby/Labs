@@ -7,13 +7,15 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    int x, y, z, i, flag;
+    int x, y, z, i, f, flag;
     int n = 0;
     printf("Сегодня, сдаем тест на знание таблицы умножения\n");
-    printf("Всего будет 10 примеров\n");
-    printf("Оценивается по 10-бальной шкале, и так, начнем\n");
+    printf("Введите кол-во примеров для проверки > ");
+    scanf_s("%d", &f);
+    printf("Всего будет %d примеров\n", f);
+    printf("Оценивается по %d-бальной шкале, и так, начнем\n", f);
     srand(time(0));
-    for (i = 0; i < 10;i++)
+    for (i = 0; i < f;i++)
     {
         x = rand() % 9 + 1;
         y = rand() % 9 + 1;
