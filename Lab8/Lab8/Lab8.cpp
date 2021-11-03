@@ -31,6 +31,6 @@ int main()
             i++;
         }
     }
-    cout << "Всего таких пар: " << count << endl << endl;
+    cout << endl << "Всего таких пар: " << count << endl << endl;
 }
 
