@@ -62,42 +62,47 @@ int main()
             cout << endl << "Сколько хотите удалить чисел -> ";
             cin >> k;
             q = k;
-            size -= q;
-            cout << "Введите индексы которые будут удалены -> ";
-            for (int i = 0; i < k; i++)
-            {
-                cin >> mas2[i];
-            }
-            for (int i = 0; i < k; i++)
-            {
-                if (mas2[i] + 1 == mas2[i + 1])
-                    pr = 1;
-            }
-            if (pr == 1) {
-                for (int i = 0, j = 0; i < size; i++)
+            if (k>0 && k<=size) {
+                size -= q;
+                cout << "Введите индексы которые будут удалены -> ";
+                for (int i = 0; i < k; i++)
                 {
-                    if (i == mas2[j]) {
-                        j++;
-                        mas1[i] = mas1[i + k];
+                    cin >> mas2[i];
+                }
+                for (int i = 0; i < k; i++)
+                {
+                    if (mas2[i] + 1 == mas2[i + 1])
+                        pr = 1;
+                }
+                if (pr == 1) {
+                    for (int i = 0, j = 0; i < size; i++)
+                    {
+                        if (i == mas2[j]) {
+                            j++;
+                            mas1[i] = mas1[i + k];
+                        }
+                        else if (i > mas2[j])
+                            mas1[i] = mas1[i + k];
                     }
-                    else if (i > mas2[j])
-                        mas1[i] = mas1[i + k];
+                }
+                else {
+                    kc = 0;
+                    f = false;
+                    for (int i = 0, j = 0; i < size; i++)
+                    {
+                        if ((i == mas2[j]) || ((i + kc == mas2[j]) && f == true)) {
+                            j++;
+                            kc++;
+                            f = true;
+                            mas1[i] = mas1[i + kc];
+                        }
+                        else if (f == true)
+                            mas1[i] = mas1[i + kc];
+                    }
                 }
             }
             else {
-                kc = 0;
-                f = false;
-                for (int i = 0, j = 0; i < size; i++)
-                {
-                    if ((i == mas2[j]) || ((i + kc == mas2[j]) && f == true)) {
-                        j++;
-                        kc++;
-                        f = true;
-                        mas1[i] = mas1[i + kc];
-                    }
-                    else if (f == true)
-                        mas1[i] = mas1[i + kc];
-                }
+                cout << "Это число больше чем количество элементов в массиве или число меньше либо равно 0"<<endl;
             }
             for (int i = 0; i < size; i++)
             {
