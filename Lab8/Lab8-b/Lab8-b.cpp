@@ -31,27 +31,36 @@ int main()
             l = 0;
             cout << endl << "Сколько хотите вставить чисел -> ";
             cin >> q;
-            j = size;
-            size += q;
-            cout << "Введите числа -> ";
-            for (int i = 0; i < q; i++)
-            {
-                cin >> mas2[i];
+            if (q < 50 && q>0) {
+
+                j = size;
+                size += q;
+                cout << "Введите числа -> ";
+                for (int i = 0; i < q; i++)
+                {
+                    cin >> mas2[i];
+                }
+                cout << "Введите индекс ->";
+                cin >> index;
+                if (index < size&& index >= 0) {
+                    for (int i = size; i > index; i--)
+                    {
+                        mas1[i] = mas1[i - q];
+                    }
+                    for (int i = index; i < index + q; i++)
+                    {
+                        mas1[i] = mas2[i - index];
+                    }
+                    for (int i = 0; i < size; i++)
+                    {
+                        cout << mas1[i] << " ";
+                    }
+                }
+                else
+                    cout << "Индекс не входит в размер массива" << endl;
             }
-            cout << "Введите индекс ->";
-            cin >> index;
-            for (int i = size; i > index; i--)
-            {
-                mas1[i] = mas1[i - q];
-            }
-            for (int i = index; i < index+q; i++)
-            {
-                mas1[i] = mas2[i-index];
-            }
-            for (int i = 0; i < size; i++)
-            {
-                cout << mas1[i] << " ";
-            }
+            else
+                cout << "Введите натуральное число меньше 50" << endl;
             break;
         case 2:
             system("cls");
@@ -68,6 +77,14 @@ int main()
                 for (int i = 0; i < k; i++)
                 {
                     cin >> mas2[i];
+                    if (mas2[i] > size+q) {
+                        pr = 3;
+                        break;
+                    }
+                }
+                if (pr == 3) {
+                    cout << "Индекс не входит в массив" << endl;
+                    break;
                 }
                 for (int i = 0; i < k; i++)
                 {
