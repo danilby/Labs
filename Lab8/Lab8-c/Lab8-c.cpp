@@ -8,7 +8,7 @@ int main()
 
     int number1, x, i, sum, count, number2, n;
     int mas[20];
-    while (true)
+   /* while (true)
     {
         n = 1;
         sum = 0;
@@ -28,46 +28,10 @@ int main()
         cout << "Число наоборот: " << number2 << endl;
         cout << "Сумма цифр: " << sum << endl;
         cout << "Кол-во цифр: " << count << endl << endl;
-    }
+    }*/
 
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   /* while (true)
+ 
+    while (true)
     {
         count = 0;
         sum = 0;
@@ -95,7 +59,39 @@ int main()
         if (count > 1 && number2 / 10 == 0)
                 count = 1;
         cout << "Число наоборот: " << number2 << endl << "Кол-во цифр: " << count << endl << "Сумма цифр: " << sum << endl << endl;
-    }*/
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
