@@ -52,7 +52,7 @@ int main()
             cout << "Введите числа больше 0" << endl;
         else
             break;
-    } while (M < 0 || N < 0);
+    } while (true);
     FillArray(arr, M, N);
     PrintArray(arr, M, N);
     for (int i = 0; i < M; i++)
