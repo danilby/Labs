@@ -39,10 +39,20 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int M = 5;
-    int N = 5;
+    int M;
+    int N;
     int i;
     int arr[10][10];
+    do {
+        cout << "Введите кол-во строк ->";
+        cin >> M;
+        cout << "Введите кол-во столбцов ->";
+        cin >> N;
+        if (M < 0 || N < 0)
+            cout << "Введите числа больше 0" << endl;
+        else
+            break;
+    } while (M < 0 || N < 0);
     FillArray(arr, M, N);
     PrintArray(arr, M, N);
     for (int i = 0; i < M; i++)
