@@ -67,7 +67,7 @@ int main()
         cout << setw(3) << arr[i];
     }
     int x = Array(arr, M, N);
-    cout <<"Преобразовываем в одномерный:"<< endl;
+    cout << "Преобразовываем в одномерный:" << endl;
     for (int i = 0; i < M*N; i++)
     {
         cout << setw(3) << arr[i];
