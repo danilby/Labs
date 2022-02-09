@@ -13,6 +13,5 @@ int main()
     cout << endl << endl;
     SortFirm(firm);
     PrintFirm(firm);
-    
 }
 

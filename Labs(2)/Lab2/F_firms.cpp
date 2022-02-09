@@ -2,8 +2,8 @@
 #include "F_firms.h"
 #include <iostream>
 using namespace std;
-#define PRINT_TYPE 1
-//#define DEBUG
+#define PRINT_TYPE 2
+#define DEBUG
 void InputFirm(Firms firm[]) {
 #if PRINT_TYPE == 1
 	int n;
