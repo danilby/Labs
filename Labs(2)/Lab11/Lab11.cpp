@@ -11,12 +11,6 @@ void Function(int a,int count) {
         cout <<count<<" число: "<< a % 10 << endl;
     }
 }
-int Fact(int a) {
-    if (a == 0 || a == 1)
-        return 1;
-    else
-        return a * Fact(a - 1);
-}
 int main()
 {
     SetConsoleCP(1251);
@@ -32,7 +26,6 @@ int main()
             b /= 10;
         }
         Function(a, count);
-        cout << Fact(5) << endl;
     }
    
 }
