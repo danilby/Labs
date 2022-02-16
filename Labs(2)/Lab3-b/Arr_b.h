@@ -3,6 +3,7 @@
 #define _ARR_A_H_
 void FeelArray(int*, int);
 void PrintArray(int*, int);
+void CopyArray(int*, int*, int);
 int get_size_b(int*, int);
 int get_size_c(int*, int);
 int get_size_d(int*, int);

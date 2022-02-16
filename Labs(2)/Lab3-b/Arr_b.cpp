@@ -15,6 +15,13 @@ void PrintArray(int* arr, int size) {
 	}
 	cout << endl;
 }
+void CopyArray(int* arr, int* newarr, int size) {
+	for (int i = 0; i < size; i++)
+	{
+		*newarr = *arr;
+		newarr++, arr++;
+	}
+}
 int get_size_b(int* arr, int size)
 {
 	int newsize = 0;
