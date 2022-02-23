@@ -8,6 +8,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     srand(time(0));
+    system("color A");
     int N;
     cout << "Введите N * N-> ";
     cin >> N;

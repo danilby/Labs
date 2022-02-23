@@ -10,7 +10,8 @@ int main()
     SetConsoleOutputCP(1251);
 	srand(time(0));
 	int size, a;
-	cout << "Введите размер N * N(до 5)--> ";
+	system("color 17");
+	cout << "Введите размер N * N (до 5)--> ";
 	cin >> size;
 	if (size < 1 || size > 5) cout << "ERROR 404 ", exit(0);
 	int** arr = new int* [size];

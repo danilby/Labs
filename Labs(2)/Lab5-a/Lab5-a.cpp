@@ -8,11 +8,12 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     srand(time(0));
+    system("color B");
     int size, sum = 0, mult = 1, s = 2, a;
-    cout << "Введите размер N * N(до 20-ти)-> ";
+    cout << "Введите размер N * N(до 5-ти)-> ";
     cin >> size;
     if (size < 1) cout << "Размерность слишком маленькая", exit(0);
-    else if (size > 20) cout << "Размерность слишком большая", exit(0);
+    else if (size > 5) cout << "Размерность слишком большая", exit(0);
     int** array = new int* [size];
     int* minarr = new int[size];
     int* maxarr = new int[size];

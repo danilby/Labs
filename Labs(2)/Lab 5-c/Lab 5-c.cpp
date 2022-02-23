@@ -8,6 +8,7 @@ int main()
     SetConsoleOutputCP(1251);
     srand(time(0));
     int size, a;
+    system("color E");
     cout << "Введите размер N (до 20-ти) -->";
     cin >> size;
     if (size < 1 || size>20) cout << "ERROR 404", exit(0);
