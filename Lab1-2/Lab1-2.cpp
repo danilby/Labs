@@ -1,5 +1,4 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
@@ -11,7 +10,5 @@ int main()
     c = 10;
     p = (a + b + c) / 2; // Вычисление полупериметра
     s = sqrt(p * (p - a) * (p - b) * (p - c)); // Вычисление площади
-   
+
 }
-
-

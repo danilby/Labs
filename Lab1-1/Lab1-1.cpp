@@ -1,6 +1,4 @@
-﻿
-
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
@@ -23,4 +21,3 @@ int main()
     int dS = sizeof(d);// Размер дабла в байтах
 
 }
-

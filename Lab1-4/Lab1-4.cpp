@@ -1,6 +1,4 @@
-﻿
-
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
@@ -10,7 +8,7 @@ int main()
 	c = a;
 	a = b;
 	b = c;
-	
+
 	int x, y;
 	x = 2;//Ввод переменных для свапа(без доп. переменной)
 	y = 7;
@@ -19,4 +17,3 @@ int main()
 	x = x - y;
 
 }
-
