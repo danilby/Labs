@@ -7,8 +7,6 @@
 #include <cmath>
 using namespace std;
 Firms* CreateListByHand() {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
 	Firms* current, * begin, * previous;
 	begin = previous = current  =  new Firms;
 	short n = 0;
