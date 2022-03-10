@@ -7,6 +7,7 @@
 #include <cmath>
 using namespace std;
 Firms* CreateListByHand() {
+	setlocale(LC_ALL, "Russian");
 	Firms* current, * begin, * previous;
 	begin = previous = current  =  new Firms;
 	short n = 0;
