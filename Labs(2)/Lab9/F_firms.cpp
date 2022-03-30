@@ -448,6 +448,7 @@ void LoadFile() {
 	current->next = nullptr;
 	tail = current;
 	cout << "Файл успешно загружен" << endl;
+	fclose(f);
 }
 void ClearList() {
 	Firms* current = head;

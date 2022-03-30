@@ -361,6 +361,7 @@ Firms* LoadFile() {
 	}
 	current->next = nullptr;
 	cout << "Файл успешно загружен" << endl;
+	fclose(f);
 	return begin;
 }
 void ClearList(Firms** begin) {

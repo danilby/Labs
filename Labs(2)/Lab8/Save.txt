@@ -1,6 +1,11 @@
 
-IOP                               8                    343234            21.9
-pow                               9                         9            21.2
-r                                 1                         2             3.0
-z                                 1                         2             3.0
-zz                                2                         3             4.0
+Firm-Chhae                        9                  10001254            72.7
+Firm-Eadx                         9                  10026038            33.3
+Firm-Fzw                          8                  10030247            30.4
+Firm-Gdpxr                        2                  10015594            50.4
+Firm-Glhey                        0                  10017217            23.2
+Firm-Nbqtl                        9                  10027636            65.8
+Firm-Omci                         6                  10008079            23.5
+Firm-Qblrp                        1                  10028938            23.5
+Firm-Vkfy                         6                  10007301            46.0
+Firm-Wrsxa                        2                  10005900            61.8
