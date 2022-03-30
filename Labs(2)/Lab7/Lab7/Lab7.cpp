@@ -32,13 +32,13 @@ int main()
 		case 3:
 			system("cls");
 			f = 2;
-			PrintFirm(fname, f);
+			PrintOneFirm(fname);
 			cout << endl << endl;
 			break;
 		case 4:
 			system("cls");
 			f = 1;
-			PrintFirm(fname,f);
+			PrintFirm(fname);
 			cout << endl << endl;
 			break;
 		case 2:

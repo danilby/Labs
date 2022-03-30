@@ -43,7 +43,7 @@ int Sum(const char* fname) {
 }
 void FindMin(const char* fname) {
 	FILE* f;
-	int min, i_min, i = 0;
+	int min, i_min = 0, i = 0;
 	int x;
 	fopen_s(&f, fname, "r+b");
 	fread(&min, sizeof(int), 1, f);
@@ -53,12 +53,20 @@ void FindMin(const char* fname) {
 		i++;
 	}
 	fseek(f, 0, SEEK_SET);
+	fread(&x, sizeof(int), 1, f);
+	i = 0;
+	if (x == min) {
+		fseek(f, i_min * sizeof(int), SEEK_SET);
+		x = 999;
+		fwrite(&x, sizeof(int), 1, f);
+		fseek(f, 0, SEEK_END);
+	}
 	while (!feof(f)) {
-		fread(&x, sizeof(int), 1, f);
-		if (min == x) {
+		fread(&x, sizeof(int), 1, f);		
+		if (x == min) {
 			fseek(f, (i_min + 1) * sizeof(int), SEEK_SET);
 			x = 999;
-			fwrite(&x, 4, 1, f);
+			fwrite(&x, sizeof(int), 1, f);
 			fseek(f, 0, SEEK_END);
 			break;
 		}
