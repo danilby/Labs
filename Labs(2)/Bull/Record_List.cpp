@@ -48,7 +48,7 @@ System::Void Bull::Record_List::CreateList(FILE *f)
 System::Void Bull::Record_List::Record_List_Load(System::Object^ sender, System::EventArgs^ e)
 {
 	FILE* f;
-	fopen_s(&f, "d:\\Temp\\Save.txt", "r+t");
+	fopen_s(&f, "Save.txt", "r+t");
 	if (!f || (fgetc(f) == EOF)) {
 		MessageBox::Show("Файла либо не существует, либо он пустой", "ERROR 404", MessageBoxButtons::AbortRetryIgnore, MessageBoxIcon::Error);
 		Close();

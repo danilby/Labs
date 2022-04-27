@@ -67,7 +67,7 @@ System::Void Bull::Game::ResetButton_Click(System::Object^ sender, System::Event
 void SaveRecord(const int count, System::String^ s_name) {
 	FILE* f;
 	char* name = Convert_String_to_char(s_name);
-	fopen_s(&f, "d:\\Temp\\Save.txt", "a+t");
+	fopen_s(&f, "Save.txt", "a+t");
 	fprintf(f, "\n%-10s %d", name, count);
 	fclose(f);
 }
